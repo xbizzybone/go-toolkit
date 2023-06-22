@@ -103,7 +103,7 @@ func (t *Translator) validatorFormatError(lang string, err error) string {
 }
 
 func loadFiles(url string) []byte {
-	resp, err := http.Get("https://raw.githubusercontent.com/xbizzybone/go-toolkit/master/validation/locales/active.es.toml")
+	resp, err := http.Get(url)
 
 	if err != nil {
 		panic(err)
