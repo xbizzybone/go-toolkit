@@ -1,0 +1,319 @@
+[required]
+one = "El campo %s es requerido"
+other = "Los campos %s son requeridos"
+
+[email]
+one = "El campo %s debe ser un email válido"
+other = "Los campos %s deben ser emails válidos"
+
+[gte]
+one = "El campo %s debe ser mayor o igual a %s"
+other = "Los campos %s deben ser mayores o iguales a %s"
+
+[gt]
+one = "El campo %s debe ser mayor a %s"
+other = "Los campos %s deben ser mayores a %s"
+
+[lte]
+one = "El campo %s debe ser menor o igual a %s"
+other = "Los campos %s deben ser menores o iguales a %s"
+
+[lt]
+one = "El campo %s debe ser menor a %s"
+other = "Los campos %s deben ser menores a %s"
+
+[eqfield]
+one = "El campo %s debe ser igual al campo %s"
+other = "Los campos %s deben ser iguales a los campos %s"
+
+[min]
+one = "El campo %s debe ser al menos %s"
+other = "Los campos %s deben ser al menos %s"
+
+[max]
+one = "El campo %s no debe ser mayor a %s"
+other = "Los campos %s no deben ser mayores a %s"
+
+[nefield]
+one = "El campo %s no debe ser igual al campo %s"
+other = "Los campos %s no deben ser iguales a los campos %s"
+
+[alpha]
+one = "El campo %s solo puede contener letras"
+other = "Los campos %s solo pueden contener letras"
+
+[alphanum]
+one = "El campo %s solo puede contener letras y números"
+other = "Los campos %s solo pueden contener letras y números"
+
+[numeric]
+one = "El campo %s debe ser un número"
+other = "Los campos %s deben ser números"
+
+[hexadecimal]
+one = "El campo %s debe ser un hexadecimal válido"
+other = "Los campos %s deben ser hexadecimales válidos"
+
+[hexcolor]
+one = "El campo %s debe ser un color hexadecimal válido"
+other = "Los campos %s deben ser colores hexadecimales válidos"
+
+[rgb]
+one = "El campo %s debe ser un color RGB válido"
+other = "Los campos %s deben ser colores RGB válidos"
+
+[rgba]
+one = "El campo %s debe ser un color RGBA válido"
+other = "Los campos %s deben ser colores RGBA válidos"
+
+[hsl]
+one = "El campo %s debe ser un color HSL válido"
+other = "Los campos %s deben ser colores HSL válidos"
+
+[hsla]
+one = "El campo %s debe ser un color HSLA válido"
+other = "Los campos %s deben ser colores HSLA válidos"
+
+[e164]
+one = "El campo %s debe ser un número de teléfono E164 válido"
+other = "Los campos %s deben ser números de teléfono E164 válidos"
+
+[url]
+one = "El campo %s debe ser una URL válida"
+other = "Los campos %s deben ser URLs válidas"
+
+[uri]
+one = "El campo %s debe ser una URI válida"
+other = "Los campos %s deben ser URIs válidas"
+
+[base64]
+one = "El campo %s debe ser un string base64 válido"
+other = "Los campos %s deben ser strings base64 válidos"
+
+[contains]
+one = "El campo %s debe contener el valor %s"
+other = "Los campos %s deben contener el valor %s"
+
+[containsany]
+one = "El campo %s debe contener al menos uno de los valores %s"
+other = "Los campos %s deben contener al menos uno de los valores %s"
+
+[excludes]
+one = "El campo %s no debe contener el valor %s"
+other = "Los campos %s no deben contener el valor %s"
+
+[excludesall]
+one = "El campo %s no debe contener ninguno de los valores %s"
+other = "Los campos %s no deben contener ninguno de los valores %s"
+
+[excludesrune]
+one = "El campo %s no debe contener el carácter %s"
+other = "Los campos %s no deben contener el carácter %s"
+
+[iscolor]
+one = "El campo %s debe ser un color válido"
+other = "Los campos %s deben ser colores válidos"
+
+[oneof]
+one = "El campo %s debe ser uno de: %s"
+other = "Los campos %s deben ser uno de: %s"
+
+[isbn]
+one = "El campo %s debe ser un número ISBN válido"
+other = "Los campos %s deben ser números ISBN válidos"
+
+[isbn10]
+one = "El campo %s debe ser un número ISBN-10 válido"
+other = "Los campos %s deben ser números ISBN-10 válidos"
+
+[isbn13]
+one = "El campo %s debe ser un número ISBN-13 válido"
+other = "Los campos %s deben ser números ISBN-13 válidos"
+
+[uuid]
+one = "El campo %s debe ser un UUID válido"
+other = "Los campos %s deben ser UUIDs válidos"
+
+[uuid3]
+one = "El campo %s debe ser un UUID versión 3 válido"
+other = "Los campos %s deben ser UUIDs versión 3 válidos"
+
+[uuid4]
+one = "El campo %s debe ser un UUID versión 4 válido"
+other = "Los campos %s deben ser UUIDs versión 4 válidos"
+
+[uuid5]
+one = "El campo %s debe ser un UUID versión 5 válido"
+other = "Los campos %s deben ser UUIDs versión 5 válidos"
+
+[ascii]
+one = "El campo %s debe contener solo caracteres ASCII"
+other = "Los campos %s deben contener solo caracteres ASCII"
+
+[printascii]
+one = "El campo %s debe contener solo caracteres ASCII imprimibles"
+other = "Los campos %s deben contener solo caracteres ASCII imprimibles"
+
+[multibyte]
+one = "El campo %s debe contener uno o más caracteres multibyte"
+other = "Los campos %s deben contener uno o más caracteres multibyte"
+
+[datauri]
+one = "El campo %s debe ser una URI de datos válida"
+other = "Los campos %s deben ser URIs de datos válidas"
+
+[latitude]
+one = "El campo %s debe ser una latitud válida"
+other = "Los campos %s deben ser latitudes válidas"
+
+[longitude]
+one = "El campo %s debe ser una longitud válida"
+other = "Los campos %s deben ser longitudes válidas"
+
+[ssn]
+one = "El campo %s debe ser un número de seguro social válido"
+other = "Los campos %s deben ser números de seguro social válidos"
+
+[ipv4]
+one = "El campo %s debe ser una dirección IPv4 válida"
+other = "Los campos %s deben ser direcciones IPv4 válidas"
+
+[ipv6]
+one = "El campo %s debe ser una dirección IPv6 válida"
+other = "Los campos %s deben ser direcciones IPv6 válidas"
+
+[ip]
+one = "El campo %s debe ser una dirección IP válida"
+other = "Los campos %s deben ser direcciones IP válidas"
+
+[cidr]
+one = "El campo %s debe ser una dirección CIDR válida"
+other = "Los campos %s deben ser direcciones CIDR válidas"
+
+[cidrv4]
+one = "El campo %s debe ser una dirección IPv4 CIDR válida"
+other = "Los campos %s deben ser direcciones IPv4 CIDR válidas"
+
+[cidrv6]
+one = "El campo %s debe ser una dirección IPv6 CIDR válida"
+other = "Los campos %s deben ser direcciones IPv6 CIDR válidas"
+
+[tcp_addr]
+one = "El campo %s debe ser una dirección TCP válida"
+other = "Los campos %s deben ser direcciones TCP válidas"
+
+[tcp4_addr]
+one = "El campo %s debe ser una dirección IPv4 TCP válida"
+other = "Los campos %s deben ser direcciones IPv4 TCP válidas"
+
+[tcp6_addr]
+one = "El campo %s debe ser una dirección IPv6 TCP válida"
+other = "Los campos %s deben ser direcciones IPv6 TCP válidas"
+
+[udp_addr]
+one = "El campo %s debe ser una dirección UDP válida"
+other = "Los campos %s deben ser direcciones UDP válidas"
+
+[udp4_addr]
+one = "El campo %s debe ser una dirección IPv4 UDP válida"
+other = "Los campos %s deben ser direcciones IPv4 UDP válidas"
+
+[udp6_addr]
+one = "El campo %s debe ser una dirección IPv6 UDP válida"
+other = "Los campos %s deben ser direcciones IPv6 UDP válidas"
+
+[ip_addr]
+one = "El campo %s debe ser una dirección IP válida"
+other = "Los campos %s deben ser direcciones IP válidas"
+
+[ip4_addr]
+one = "El campo %s debe ser una dirección IPv4 válida"
+other = "Los campos %s deben ser direcciones IPv4 válidas"
+
+[ip6_addr]
+one = "El campo %s debe ser una dirección IPv6 válida"
+other = "Los campos %s deben ser direcciones IPv6 válidas"
+
+[unix_addr]
+one = "El campo %s debe ser una dirección Unix válida"
+other = "Los campos %s deben ser direcciones Unix válidas"
+
+[mac]
+one = "El campo %s debe ser una dirección MAC válida"
+other = "Los campos %s deben ser direcciones MAC válidas"
+
+[hostname]
+one = "El campo %s debe ser un nombre de host válido"
+other = "Los campos %s deben ser nombres de host válidos"
+
+[fqdn]
+one = "El campo %s debe ser un FQDN válido"
+other = "Los campos %s deben ser FQDNs válidos"
+
+[unique]
+one = "El campo %s debe contener un valor único"
+other = "Los campos %s deben contener valores únicos"
+
+[isdefault]
+one = "El campo %s debe ser el valor predeterminado"
+other = "Los campos %s deben ser los valores predeterminados"
+
+[requiredif]
+one = "El campo %s es requerido cuando %s es %s"
+other = "Los campos %s son requeridos cuando %s es %s"
+
+[requiredunless]
+one = "El campo %s es requerido cuando %s no es %s"
+other = "Los campos %s son requeridos cuando %s no es %s"
+
+[requiredwith]
+one = "El campo %s es requerido cuando %s está presente"
+other = "Los campos %s son requeridos cuando %s está presente"
+
+[requiredwithall]
+one = "El campo %s es requerido cuando %s están presentes"
+other = "Los campos %s son requeridos cuando %s están presentes"
+
+[requiredwithout]
+one = "El campo %s es requerido cuando %s no está presente"
+other = "Los campos %s son requeridos cuando %s no está presente"
+
+[requiredwithoutall]
+one = "El campo %s es requerido cuando %s no están presentes"
+other = "Los campos %s son requeridos cuando %s no están presentes"
+
+[excludedif]
+one = "El campo %s es requerido cuando %s es %s"
+other = "Los campos %s son requeridos cuando %s es %s"
+
+[excludedunless]
+one = "El campo %s es requerido cuando %s no es %s"
+other = "Los campos %s son requeridos cuando %s no es %s"
+
+[excludedwith]
+one = "El campo %s es requerido cuando %s está presente"
+other = "Los campos %s son requeridos cuando %s está presente"
+
+[excludedwithall]
+one = "El campo %s es requerido cuando %s están presentes"
+other = "Los campos %s son requeridos cuando %s están presentes"
+
+[excludedwithout]
+one = "El campo %s es requerido cuando %s no está presente"
+other = "Los campos %s son requeridos cuando %s no está presente"
+
+[excludedwithoutall]
+one = "El campo %s es requerido cuando %s no están presentes"
+other = "Los campos %s son requeridos cuando %s no están presentes"
+
+[isfile]
+one = "El campo %s debe ser un archivo cargado"
+other = "Los campos %s deben ser archivos cargados"
+
+[isdir]
+one = "El campo %s debe ser un directorio"
+other = "Los campos %s deben ser directorios"
+
+[isjson]
+one = "El campo %s debe ser una cadena JSON válida"
+other = "Los campos %s deben ser cadenas JSON válidas"

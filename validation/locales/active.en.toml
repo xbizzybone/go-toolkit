@@ -1,0 +1,319 @@
+[required]
+one = "The field %s is required"
+other = "The fields %s are required"
+
+[email]
+one = "The field %s is not a valid email address"
+other = "The fields %s are not valid email addresses"
+
+[gte]
+one = "The field %s must be greater than or equal to %s"
+other = "The fields %s must be greater than or equal to %s"
+
+[gt]
+one = "The field %s must be greater than %s"
+other = "The fields %s must be greater than %s"
+
+[lte]
+one = "The field %s must be less than or equal to %s"
+other = "The fields %s must be less than or equal to %s"
+
+[lt]
+one = "The field %s must be less than %s"
+other = "The fields %s must be less than %s"
+
+[eqfield]
+one = "The field %s must be equal to %s"
+other = "The fields %s must be equal to %s"
+
+[min]
+one = "The field %s must be at least %s"
+other = "The fields %s must be at least %s"
+
+[max]
+one = "The field %s may not be greater than %s"
+other = "The fields %s may not be greater than %s"
+
+[nefield]
+one = "The field %s must not be equal to %s"
+other = "The fields %s must not be equal to %s"
+
+[alpha]
+one = "The field %s may only contain letters"
+other = "The fields %s may only contain letters"
+
+[alphanum]
+one = "The field %s may only contain letters and numbers"
+other = "The fields %s may only contain letters and numbers"
+
+[numeric]
+one = "The field %s must be a number"
+other = "The fields %s must be a number"
+
+[hexadecimal]
+one = "The field %s has an invalid hexadecimal format"
+other = "The fields %s have an invalid hexadecimal format"
+
+[hexcolor]
+one = "The field %s has an invalid hexcolor format"
+other = "The fields %s have an invalid hexcolor format"
+
+[rgb]
+one = "The field %s has an invalid rgb format"
+other = "The fields %s have an invalid rgb format"
+
+[rgba]
+one = "The field %s has an invalid rgba format"
+other = "The fields %s have an invalid rgba format"
+
+[hsl]
+one = "The field %s has an invalid hsl format"
+other = "The fields %s have an invalid hsl format"
+
+[hsla]
+one = "The field %s has an invalid hsla format"
+other = "The fields %s have an invalid hsla format"
+
+[e164]
+one = "The field %s has an invalid e164 format"
+other = "The fields %s have an invalid e164 format"
+
+[url]
+one = "The field %s has an invalid URL format"
+other = "The fields %s have an invalid URL format"
+
+[uri]
+one = "The field %s has an invalid URI format"
+other = "The fields %s have an invalid URI format"
+
+[base64]
+one = "The field %s has an invalid base64 format"
+other = "The fields %s have an invalid base64 format"
+
+[contains]
+one = "The field %s must contain the value %s"
+other = "The fields %s must contain the value %s"
+
+[containsany]
+one = "The field %s must contain at least one of these values: %s"
+other = "The fields %s must contain at least one of these values: %s"
+
+[excludes]
+one = "The field %s may not contain the value %s"
+other = "The fields %s may not contain the value %s"
+
+[excludesall]
+one = "The field %s may not contain any of these values: %s"
+other = "The fields %s may not contain any of these values: %s"
+
+[excludesrune]
+one = "The field %s may not contain the rune %s"
+other = "The fields %s may not contain the rune %s"
+
+[iscolor]
+one = "The field %s must be a valid color"
+other = "The fields %s must be a valid color"
+
+[oneof]
+one = "The field %s must be one of: %s"
+other = "The fields %s must be one of: %s"
+
+[isbn]
+one = "The field %s must be a valid ISBN number"
+other = "The fields %s must be a valid ISBN number"
+
+[isbn10]
+one = "The field %s must be a valid ISBN-10 number"
+other = "The fields %s must be a valid ISBN-10 number"
+
+[isbn13]
+one = "The field %s must be a valid ISBN-13 number"
+other = "The fields %s must be a valid ISBN-13 number"
+
+[uuid]
+one = "The field %s must be a valid UUID"
+other = "The fields %s must be a valid UUID"
+
+[uuid3]
+one = "The field %s must be a valid version 3 UUID"
+other = "The fields %s must be a valid version 3 UUID"
+
+[uuid4]
+one = "The field %s must be a valid version 4 UUID"
+other = "The fields %s must be a valid version 4 UUID"
+
+[uuid5]
+one = "The field %s must be a valid version 5 UUID"
+other = "The fields %s must be a valid version 5 UUID"
+
+[ascii]
+one = "The field %s must contain only ASCII characters"
+other = "The fields %s must contain only ASCII characters"
+
+[printascii]
+one = "The field %s must contain only printable ASCII characters"
+other = "The fields %s must contain only printable ASCII characters"
+
+[multibyte]
+one = "The field %s must contain one or more multibyte characters"
+other = "The fields %s must contain one or more multibyte characters"
+
+[datauri]
+one = "The field %s must be a valid data URI"
+other = "The fields %s must be a valid data URI"
+
+[latitude]
+one = "The field %s must be a valid latitude"
+other = "The fields %s must be a valid latitude"
+
+[longitude]
+one = "The field %s must be a valid longitude"
+other = "The fields %s must be a valid longitude"
+
+[ssn]
+one = "The field %s must be a valid SSN"
+other = "The fields %s must be a valid SSN"
+
+[ipv4]
+one = "The field %s must be a valid IPv4 address"
+other = "The fields %s must be a valid IPv4 address"
+
+[ipv6]
+one = "The field %s must be a valid IPv6 address"
+other = "The fields %s must be a valid IPv6 address"
+
+[ip]
+one = "The field %s must be a valid IP address"
+other = "The fields %s must be a valid IP address"
+
+[cidr]
+one = "The field %s must be a valid CIDR address"
+other = "The fields %s must be a valid CIDR address"
+
+[cidrv4]
+one = "The field %s must be a valid IPv4 CIDR address"
+other = "The fields %s must be a valid IPv4 CIDR address"
+
+[cidrv6]
+one = "The field %s must be a valid IPv6 CIDR address"
+other = "The fields %s must be a valid IPv6 CIDR address"
+
+[tcp_addr]
+one = "The field %s must be a valid TCP address"
+other = "The fields %s must be a valid TCP address"
+
+[tcp4_addr]
+one = "The field %s must be a valid IPv4 TCP address"
+other = "The fields %s must be a valid IPv4 TCP address"
+
+[tcp6_addr]
+one = "The field %s must be a valid IPv6 TCP address"
+other = "The fields %s must be a valid IPv6 TCP address"
+
+[udp_addr]
+one = "The field %s must be a valid UDP address"
+other = "The fields %s must be a valid UDP address"
+
+[udp4_addr]
+one = "The field %s must be a valid IPv4 UDP address"
+other = "The fields %s must be a valid IPv4 UDP address"
+
+[udp6_addr]
+one = "The field %s must be a valid IPv6 UDP address"
+other = "The fields %s must be a valid IPv6 UDP address"
+
+[ip_addr]
+one = "The field %s must be a valid IP address"
+other = "The fields %s must be a valid IP address"
+
+[ip4_addr]
+one = "The field %s must be a valid IPv4 address"
+other = "The fields %s must be a valid IPv4 address"
+
+[ip6_addr]
+one = "The field %s must be a valid IPv6 address"
+other = "The fields %s must be a valid IPv6 address"
+
+[unix_addr]
+one = "The field %s must be a valid Unix address"
+other = "The fields %s must be a valid Unix address"
+
+[mac]
+one = "The field %s must be a valid MAC address"
+other = "The fields %s must be a valid MAC address"
+
+[hostname]
+one = "The field %s must be a valid hostname"
+other = "The fields %s must be a valid hostname"
+
+[fqdn]
+one = "The field %s must be a valid FQDN"
+other = "The fields %s must be a valid FQDN"
+
+[unique]
+one = "The field %s must contain unique values"
+other = "The fields %s must contain unique values"
+
+[isdefault]
+one = "The field %s must be the default value"
+other = "The fields %s must be the default value"
+
+[requiredif]
+one = "The field %s is required when %s is %s"
+other = "The fields %s are required when %s is %s"
+
+[requiredunless]
+one = "The field %s is required when %s is not %s"
+other = "The fields %s are required when %s is not %s"
+
+[requiredwith]
+one = "The field %s is required when %s is present"
+other = "The fields %s are required when %s is present"
+
+[requiredwithall]
+one = "The field %s is required when %s are present"
+other = "The fields %s are required when %s are present"
+
+[requiredwithout]
+one = "The field %s is required when %s is not present"
+other = "The fields %s are required when %s is not present"
+
+[requiredwithoutall]
+one = "The field %s is required when %s are not present"
+other = "The fields %s are required when %s are not present"
+
+[excludedif]
+one = "The field %s is required when %s is %s"
+other = "The fields %s are required when %s is %s"
+
+[excludedunless]
+one = "The field %s is required when %s is not %s"
+other = "The fields %s are required when %s is not %s"
+
+[excludedwith]
+one = "The field %s is required when %s is present"
+other = "The fields %s are required when %s is present"
+
+[excludedwithall]
+one = "The field %s is required when %s are present"
+other = "The fields %s are required when %s are present"
+
+[excludedwithout]
+one = "The field %s is required when %s is not present"
+other = "The fields %s are required when %s is not present"
+
+[excludedwithoutall]
+one = "The field %s is required when %s are not present"
+other = "The fields %s are required when %s are not present"
+
+[isfile]
+one = "The field %s must be an uploaded file"
+other = "The fields %s must be an uploaded file"
+
+[isdir]
+one = "The field %s must be a directory"
+other = "The fields %s must be a directory"
+
+[isjson]
+one = "The field %s must be a valid JSON string"
+other = "The fields %s must be a valid JSON string"
