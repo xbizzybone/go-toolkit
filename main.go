@@ -12,7 +12,7 @@ type User struct {
 }
 
 func main() {
-	translator := validation.NewTranslator()
+	translator := validation.NewValidatorMessageTranslator()
 
 	user := User{
 		Email: "bad_email",

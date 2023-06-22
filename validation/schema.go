@@ -24,11 +24,11 @@ const (
 	Spanish Language = "es"
 )
 
-type Translator struct {
+type ValidatorMessageTranslator struct {
 	Bundle *i18n.Bundle
 }
 
-func NewTranslator() *Translator {
+func NewValidatorMessageTranslator() *ValidatorMessageTranslator {
 	bundle := i18n.NewBundle(language.English)
 	bundle.RegisterUnmarshalFunc("toml", toml.Unmarshal)
 	bundle.MustParseMessageFileBytes(loadFiles(filesURL+"/active.en.toml"), "active.en.toml")
@@ -42,12 +42,12 @@ func NewTranslator() *Translator {
 		return name
 	})
 
-	return &Translator{
+	return &ValidatorMessageTranslator{
 		Bundle: bundle,
 	}
 }
 
-func (l Language) IsSupported() bool {
+func (l Language) isSupported() bool {
 	switch l {
 	case English, Spanish:
 		return true
@@ -56,8 +56,8 @@ func (l Language) IsSupported() bool {
 	}
 }
 
-func (t *Translator) ValidateSchema(lang string, data interface{}) error {
-	if !Language(lang).IsSupported() {
+func (t *ValidatorMessageTranslator) ValidateSchema(lang string, data interface{}) error {
+	if !Language(lang).isSupported() {
 		return errors.New("language not supported")
 	}
 
@@ -67,7 +67,7 @@ func (t *Translator) ValidateSchema(lang string, data interface{}) error {
 	return nil
 }
 
-func (t *Translator) validatorFormatError(lang string, err error) string {
+func (t *ValidatorMessageTranslator) validatorFormatError(lang string, err error) string {
 	loc := i18n.NewLocalizer(t.Bundle, string(lang))
 	message := ""
 
