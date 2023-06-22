@@ -126,15 +126,7 @@ func loadFiles(url string) []byte {
 func isValidFilename(filename string) bool {
 	filenameSlice := strings.Split(filename, ".")
 
-	if len(filenameSlice) != 3 {
-		return false
-	}
-
-	if filenameSlice[0] != "active" {
-		return false
-	}
-
-	if filenameSlice[2] != "toml" {
+	if len(filenameSlice) != 3 || filenameSlice[0] != "active" || filenameSlice[2] != "toml" {
 		return false
 	}
 
