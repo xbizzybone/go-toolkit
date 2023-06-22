@@ -3,6 +3,8 @@ package validation
 import (
 	"errors"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 	"reflect"
 	"strings"
 
@@ -13,6 +15,7 @@ import (
 )
 
 var v = validator.New()
+var filesURL = "https://raw.githubusercontent.com/xbizzybone/go-toolkit/master/validation/locales"
 
 type Language string
 
@@ -28,8 +31,8 @@ type Translator struct {
 func NewTranslator() *Translator {
 	bundle := i18n.NewBundle(language.English)
 	bundle.RegisterUnmarshalFunc("toml", toml.Unmarshal)
-	bundle.MustLoadMessageFile("./validation/locales/active.en.toml")
-	bundle.MustLoadMessageFile("./validation/locales/active.es.toml")
+	bundle.MustParseMessageFileBytes(loadFiles(filesURL+"/active.en.toml"), "active.en.toml")
+	bundle.MustParseMessageFileBytes(loadFiles(filesURL+"/active.es.toml"), "active.es.toml")
 
 	v.RegisterTagNameFunc(func(fld reflect.StructField) string {
 		name := strings.SplitN(fld.Tag.Get("json"), ",", 2)[0]
@@ -97,4 +100,25 @@ func (t *Translator) validatorFormatError(lang string, err error) string {
 	}
 
 	return message
+}
+
+func loadFiles(url string) []byte {
+	resp, err := http.Get("https://raw.githubusercontent.com/xbizzybone/go-toolkit/master/validation/locales/active.es.toml")
+
+	if err != nil {
+		panic(err)
+	}
+
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		fmt.Println("Failed to download the file, status code:", resp.StatusCode)
+	}
+
+	fileBytes, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Println("Failed to read the file:", err)
+	}
+
+	return fileBytes
 }
