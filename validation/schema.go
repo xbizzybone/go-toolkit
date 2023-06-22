@@ -122,3 +122,65 @@ func loadFiles(url string) []byte {
 
 	return fileBytes
 }
+
+func isValidFilename(filename string) bool {
+	filenameSlice := strings.Split(filename, ".")
+
+	if len(filenameSlice) != 3 {
+		return false
+	}
+
+	if filenameSlice[0] != "active" {
+		return false
+	}
+
+	if filenameSlice[2] != "toml" {
+		return false
+	}
+
+	return true
+}
+
+/*
+AddCustomMustParseMessageFileBytes is a function that allows you to add custom messages to the validator.
+The fileBytes parameter is the content of the file to be added.
+The filename parameter is the name of the file to be added. It must be in the format: active.{language}.toml (e.g. active.fr.toml)
+
+The format of the file must be as follows:
+[is-hola] # tag
+one = "The field %s must be hola" # message
+other = "The field %s must be hola" # message
+
+[is-required]
+one = "The field %s is required"
+other = "The field %s is required"
+*/
+func (t *ValidatorMessageTranslator) AddCustomMustParseMessageFileBytes(fileBytes []byte, filename string) {
+	if !isValidFilename(filename) {
+		panic("invalid filename")
+	}
+
+	t.Bundle.MustParseMessageFileBytes(fileBytes, filename)
+}
+
+/*
+AddCustomMustParseMessageFileBytesFromURL is a function that allows you to add custom messages to the validator.
+The url parameter is the url of the file to be added.
+
+The format of the file must be as follows:
+[is-hola] # tag
+one = "The field %s must be hola" # message
+other = "The field %s must be hola" # message
+
+[is-required]
+one = "The field %s is required"
+other = "The field %s is required"
+*/
+func (t *ValidatorMessageTranslator) AddCustomMustParseMessageFileBytesFromURL(url string, filename string) {
+	if !isValidFilename(filename) {
+		panic("invalid filename")
+	}
+
+	fileBytes := loadFiles(url)
+	t.AddCustomMustParseMessageFileBytes(fileBytes, filename)
+}
