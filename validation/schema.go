@@ -3,7 +3,7 @@ package validation
 import (
 	"errors"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"reflect"
 	"strings"
@@ -115,7 +115,7 @@ func loadFiles(url string) []byte {
 		fmt.Println("Failed to download the file, status code:", resp.StatusCode)
 	}
 
-	fileBytes, err := ioutil.ReadAll(resp.Body)
+	fileBytes, err := io.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println("Failed to read the file:", err)
 	}
