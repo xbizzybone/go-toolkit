@@ -2,28 +2,22 @@ package main
 
 import (
 	"fmt"
-	"os"
 
 	"github.com/xbizzybone/go-toolkit/validation"
 )
 
 type User struct {
 	Email string `validate:"required,email" json:"email_json"`
-	Name  string `validate:"required" json:"name_json"`
+	Name  string `validate:"required,min=6" json:"name_json"`
 }
 
 func main() {
-	translator := validation.NewValidatorMessageTranslator()
+	translator := validation.NewValidatorMessageTranslator(validation.Struct)
 
 	user := User{
-		Email: "bad_email",
+		Email: "email@gmail.com",
 		Name:  "hola",
 	}
-
-	localesEsBytes, _ := os.ReadFile("./validation/locales/active.es.toml")
-
-	translator.AddCustomMustParseMessageFileBytes(localesEsBytes, "active.es.toml")
-	translator.AddCustomMustParseMessageFileBytes(localesEsBytes, "active.en.toml")
 
 	fmt.Println(translator.ValidateSchema("jp", user)) // not supported language
 	fmt.Println(translator.ValidateSchema("en", user))
