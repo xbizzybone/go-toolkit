@@ -106,7 +106,7 @@ func (t *ValidatorMessageTranslator) validatorFormatError(lang string, err error
 		fieldname := err.Field()
 		tag := err.Tag()
 		errParam := err.Param()
-		errValue := err.Value().(string)
+		errValue := fmt.Sprintf("%v", err.Value())
 
 		msg, err := loc.Localize(&i18n.LocalizeConfig{
 			MessageID:   tag,
